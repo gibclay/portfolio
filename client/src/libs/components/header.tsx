@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className="navbar bg-base-300 mb-16 shadow-lg">
+    <div className="navbar bg-neutral mb-16 shadow-md">
       <div className="navbar-start">
         <button
           className="btn btn-primary text-xl"
