@@ -10,7 +10,7 @@ const App = () => {
   const [theme, setTheme] = useState(themeConfig.default);
 
   return (
-    <ThemeContext.Provider value={theme}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <html data-theme={theme}>
         <RouterProvider router={router} />
       </html>

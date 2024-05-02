@@ -1,8 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import { DarkIcon, LightIcon } from "./Icons/themeIcons";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/themeContext";
 
 const Header = () => {
   const navigate = useNavigate();
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  const swapTheme = () => {
+    setTheme(theme == "dracula" ? "pastel" : "dracula");
+  };
 
   return (
     <div className="navbar bg-base-300 mb-16 shadow-lg">
@@ -22,7 +29,11 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         <label className="swap swap-rotate">
-          <input type="checkbox" onClick={() => {}} />
+          <input
+            type="checkbox"
+            checked={theme == "dracula"}
+            onClick={swapTheme}
+          />
           <DarkIcon />
           <LightIcon />
         </label>
