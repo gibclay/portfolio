@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div></div>
+      <div className="footer mt-16"></div>
     </>
   );
 };
