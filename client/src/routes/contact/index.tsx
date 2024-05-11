@@ -2,11 +2,11 @@ const ContactPage = () => {
   return (
     <>
       <h1 className="h1">Contacts</h1>
-      <div className="w-2/3 p-4 mx-auto self-center">
+      <div className="w-full sm:w-2/3 p-4 mx-auto self-center">
         <div className="flex flex-row">
           <div className="grid grid-cols-4 w-1/2 bg-neutral rounded-box p-4 m-2">
             <div className="col-span-4 col-start-1">
-              <h2 className="text-3xl font-semibold divider">Contact</h2>
+              <h2 className="h2">Contact</h2>
             </div>
             <div className="col-span-1 col-start-1 space-y-2 text-lg">
               <p>Name</p>

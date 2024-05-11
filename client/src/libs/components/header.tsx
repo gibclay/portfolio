@@ -35,7 +35,12 @@ const Header = () => {
         <div className="navbar-center">
           <ul className="menu menu-horizontal space-x-8">
             <Dropdown className="dropdown dropdown-hover" vertical="bottom">
-              <div tabIndex={0} role="button" className="btn-nav">
+              <div
+                onClick={() => navigate("")}
+                tabIndex={0}
+                role="button"
+                className="btn-nav"
+              >
                 Home
               </div>
               <ul className="dropdown-content menu rounded-box bg-base-200">

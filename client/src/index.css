@@ -6,6 +6,14 @@
   @apply text-4xl font-semibold w-full text-center divider;
 }
 
+.h2 {
+  @apply text-3xl font-semibold divider;
+}
+
+.h3 {
+  @apply text-xl font-semibold;
+}
+
 .theme-swap {
   @apply swap swap-rotate outline-2 outline rounded-full p-1.5 mr-1;
 }

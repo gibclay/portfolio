@@ -10,7 +10,7 @@ export const Education = () => {
             "url(https://brocku.ca/about/wp-content/uploads/primary-site/sites/8/Brock-Panorama-Nov-5-2021-crop-1800x724.jpg?x59347)",
           paddingBottom: "31%",
         }}
-        className="w-full mask rounded-box bg-no-repeat bg-contain"
+        className="w-full rounded-box bg-no-repeat bg-contain"
       >
         <Hero.Overlay />
         <Hero.Content className="h-full">
