@@ -1,9 +1,18 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const navigate = useNavigate();
+
+  let carouselArgs = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplaySpeed: 6000,
+    autoplay: true,
+  };
   return (
     <>
       <div>
@@ -18,16 +27,25 @@ const Projects = () => {
               provide a platform to host supplementary information helpful to
               aspiring Software Engineers.
             </p>
+            <Link
+              to="https://bitesapp.org/"
+              className="btn centered btn-secondary btn-wide my-8 col-span-2"
+            >
+              Visit BITES
+            </Link>
           </div>
           <div className="w-full p-10">
-            <BitesCarousel />
+            <BitesCarousel args={carouselArgs} />
           </div>
-          <div className="w-1/2 self-center rounded-box content-center">
-            placeholder
+          <div className="w-full p-10">
+            <BuildmasterCarousel args={carouselArgs} />
           </div>
           <div className="w-full p-8 content-center">
             <h2 className="h3">BuildMaster</h2>
-            <p className="text-lg text-center content-center">Demo</p>
+            <p className="text-lg centered content-center">Demo</p>
+            <p className="btn btn-secondary btn-wide text-center mx-auto btn-md my-8 col-span-2">
+              Visit BuildMaster
+            </p>
           </div>
         </div>
       </div>
@@ -35,19 +53,23 @@ const Projects = () => {
   );
 };
 
-interface CarouselProps {}
+interface CarouselProps {
+  args: any;
+}
 
 const BitesCarousel = (props: CarouselProps) => {
-  let args = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // let args = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplaySpeed: 3000,
+  //   autoplay: true,
+  // };
   return (
     <Link to="https://bitesapp.org/">
-      <Slider {...args}>
+      <Slider {...props.args}>
         <div>
           <img
             className="rounded-box"
@@ -67,32 +89,37 @@ const BitesCarousel = (props: CarouselProps) => {
   );
 };
 
-const BuildmasterCarousel = () => {
-  let args = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const BuildmasterCarousel = (props: CarouselProps) => {
   return (
-    <Slider {...args}>
-      <Link to="https://bitesapp.org/">
-        <div>
-          <img
-            className="rounded-box"
-            src="src/assets/bites/bites-logo.png"
-            alt="Bites logo"
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-box"
-            src="src/assets/bites/bites-modules.png"
-            alt="Bites Modules"
-          />
-        </div>
-      </Link>
+    <Slider {...props.args}>
+      <div>
+        <img
+          className="rounded-box"
+          src="src/assets/buildmaster/buildmaster-front.png"
+          alt="Bites logo"
+        />
+      </div>
+      <div>
+        <img
+          className="rounded-box"
+          src="src/assets/buildmaster/buildmaster-build.png"
+          alt="Bites Modules"
+        />
+      </div>
+      <div>
+        <img
+          className="rounded-box"
+          src="src/assets/buildmaster/buildmaster-details.png"
+          alt="Bites Modules"
+        />
+      </div>
+      <div>
+        <img
+          className="rounded-box"
+          src="src/assets/buildmaster/buildmaster-service.png"
+          alt="Bites Modules"
+        />
+      </div>
     </Slider>
   );
 };

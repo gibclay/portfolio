@@ -21,3 +21,7 @@
 .btn-nav {
   @apply btn btn-sm btn-ghost font-bold;
 }
+
+.centered {
+  @apply text-center mx-auto;
+}
