@@ -15,7 +15,7 @@
 }
 
 .theme-swap {
-  @apply swap swap-rotate outline-2 outline rounded-full p-1.5 mr-1;
+  @apply swap swap-rotate outline outline-neutral btn btn-circle m-4;
 }
 
 .btn-nav {
@@ -24,4 +24,7 @@
 
 .centered {
   @apply text-center mx-auto;
+}
+
+.transparent-50 {
 }

@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, useNavigate } from "react-router-dom";
+import { Divider } from "react-daisyui";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -42,7 +43,11 @@ const Projects = () => {
           </div>
           <div className="w-full p-8 content-center">
             <h2 className="h3">BuildMaster</h2>
-            <p className="text-lg centered content-center">Demo</p>
+            <p className="text-lg centered content-center">
+              BuildMaster is a frontend demo for a Do It Yourself PC Builder
+              application. It is made to showcase principles of frontend
+              development and User Experience.
+            </p>
             <p className="btn btn-secondary btn-wide text-center mx-auto btn-md my-8 col-span-2">
               Visit BuildMaster
             </p>

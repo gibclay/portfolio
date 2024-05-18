@@ -25,7 +25,7 @@ const Header = () => {
       <div className="navbar bg-neutral mb-16 shadow-md">
         <div className="navbar-start">
           <button
-            className="btn btn-primary text-xl"
+            className="btn btn-accent text-xl"
             onClick={() => navigate("")}
           >
             Monty Oshinov
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
 
         <div className="navbar-center">
-          <ul className="menu menu-horizontal space-x-8">
+          <ul className="menu menu-horizontal text-neutral-content space-x-8">
             <Dropdown className="dropdown dropdown-hover" vertical="bottom">
               <div
                 onClick={() => navigate("")}
@@ -78,7 +78,7 @@ const Header = () => {
         </div>
 
         <div className="navbar-end">
-          <label className="theme-swap">
+          {/* <label className="theme-swap">
             <input
               type="checkbox"
               checked={theme == "dracula"}
@@ -86,7 +86,7 @@ const Header = () => {
             />
             <DarkIcon />
             <LightIcon />
-          </label>
+          </label> */}
         </div>
         {/* <ContactsModal /> */}
       </div>
