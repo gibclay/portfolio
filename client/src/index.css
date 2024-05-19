@@ -26,5 +26,6 @@
   @apply text-center mx-auto;
 }
 
-.transparent-50 {
+.page {
+  @apply w-full sm:w-2/3;
 }

@@ -2,7 +2,7 @@ import { Hero } from "react-daisyui";
 
 export const Education = () => {
   return (
-    <div className="w-full">
+    <>
       <h1 className="h1">Education</h1>
       <Hero
         style={{
@@ -28,6 +28,6 @@ export const Education = () => {
           </div>
         </Hero.Content>
       </Hero>
-    </div>
+    </>
   );
 };
