@@ -1,10 +1,12 @@
 interface iThemeConfig {
-  default: string;
+  default_dark: string;
+  default_light: string;
   themes: string[];
 }
 
 const themeConfig: iThemeConfig = {
-  default: "dracula",
+  default_dark: "dracula",
+  default_light: "nord",
   themes: ["dracula", "nord"],
 };
 

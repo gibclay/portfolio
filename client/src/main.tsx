@@ -7,7 +7,7 @@ import { ThemeContext } from "./libs/contexts/themeContext";
 import themeConfig from "./config/theme";
 
 const App = () => {
-  const [theme, setTheme] = useState(themeConfig.default);
+  const [theme, setTheme] = useState(themeConfig.default_dark);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
