@@ -1,4 +1,4 @@
-const Experience = () => {
+export const Experience = () => {
   return (
     <>
       <h1 className="h1">Experience</h1>
@@ -6,5 +6,3 @@ const Experience = () => {
     </>
   );
 };
-
-export default Experience;
