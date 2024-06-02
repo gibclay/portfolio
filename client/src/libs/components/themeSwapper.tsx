@@ -1,7 +1,7 @@
-import { DarkIcon, LightIcon } from "./Icons/themeIcons";
-import { useContext } from "react";
-import { ThemeContext } from "../contexts/themeContext";
-import themeConfig from "@src/config/theme";
+import { DarkIcon, LightIcon } from './Icons/themeIcons';
+import { useContext } from 'react';
+import { ThemeContext } from '../contexts/themeContext';
+import themeConfig from '@src/config/theme';
 
 const ThemeSwapper = () => {
   const { theme, setTheme } = useContext(ThemeContext);

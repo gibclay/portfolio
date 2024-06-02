@@ -1,5 +1,5 @@
-import { Divider } from "react-daisyui";
-import { Link } from "react-router-dom";
+import { Divider } from 'react-daisyui';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (

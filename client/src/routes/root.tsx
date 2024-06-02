@@ -1,7 +1,7 @@
-import Header from "@components/header";
-import Footer from "@components/footer";
-import { Outlet } from "react-router-dom";
-import ThemeSwapper from "@src/libs/components/themeSwapper";
+import Header from '@components/header';
+import Footer from '@components/footer';
+import { Outlet } from 'react-router-dom';
+import ThemeSwapper from '@src/libs/components/themeSwapper';
 
 export const Root = () => {
   return (

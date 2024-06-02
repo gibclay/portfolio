@@ -1,19 +1,19 @@
-import { createBrowserRouter } from "react-router-dom";
-import { HomePage } from "./Home";
-import { Root } from "./root";
-import ContactPage from "./contact";
+import { createBrowserRouter } from 'react-router-dom';
+import { HomePage } from './Home';
+import { Root } from './root';
+import ContactPage from './contact';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Root />,
     children: [
       {
-        path: "",
+        path: '',
         element: <HomePage />,
       },
       {
-        path: "contact",
+        path: 'contact',
         element: <ContactPage />,
       },
     ],

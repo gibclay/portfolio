@@ -1,6 +1,6 @@
-import { useCallback, useRef, useState } from "react";
-import { Button, Modal } from "react-daisyui";
-import { createPortal } from "react-dom";
+import { useCallback, useRef, useState } from 'react';
+import { Button, Modal } from 'react-daisyui';
+import { createPortal } from 'react-dom';
 
 const ContactsModal = () => {
   const [open, setOpen] = useState<boolean>(false);

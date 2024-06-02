@@ -1,6 +1,6 @@
-import { Education } from "./education";
-import { Experience } from "./experience";
-import { Projects } from "./projects";
+import { Education } from './education';
+import { Experience } from './experience';
+import { Projects } from './projects';
 
 const HomePage = () => {
   return (

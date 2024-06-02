@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Carousel } from "react-daisyui";
+import { useState } from 'react';
+import { Carousel } from 'react-daisyui';
 
 interface ButtonCarouselProps {
   images: string[];

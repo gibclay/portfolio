@@ -1,5 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
-import { Button, Dropdown } from "react-daisyui";
+import { Link, useNavigate } from 'react-router-dom';
+import { Button, Dropdown } from 'react-daisyui';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const Header = () => {
         <div className="navbar-start">
           <button
             className="btn btn-accent text-xl"
-            onClick={() => navigate("")}
+            onClick={() => navigate('')}
           >
             Monty Oshinov
           </button>
@@ -20,7 +20,7 @@ const Header = () => {
           <ul className="menu menu-horizontal text-neutral-content space-x-8">
             <Dropdown hover vertical="bottom">
               <div
-                onClick={() => navigate("")}
+                onClick={() => navigate('')}
                 tabIndex={0}
                 role="button"
                 className="btn-nav"
@@ -29,10 +29,10 @@ const Header = () => {
               </div>
               <ul className="dropdown-content menu rounded-box bg-base-200 text-base-content">
                 <Dropdown.Item>
-                  <div onClick={() => navigate("")}>Education</div>
+                  <div onClick={() => navigate('')}>Education</div>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <div onClick={() => navigate("")}>Projects</div>
+                  <div onClick={() => navigate('')}>Projects</div>
                 </Dropdown.Item>
               </ul>
             </Dropdown>
@@ -42,7 +42,7 @@ const Header = () => {
                 className="btn-nav"
                 onClick={() => {
                   // return document.getElementById("contacts_modal")?.showModal();
-                  navigate("/contact");
+                  navigate('/contact');
                 }}
               >
                 Contact

@@ -5,9 +5,9 @@ interface iThemeConfig {
 }
 
 const themeConfig: iThemeConfig = {
-  default_dark: "dracula",
-  default_light: "nord",
-  themes: ["dracula", "nord"],
+  default_dark: 'dracula',
+  default_light: 'nord',
+  themes: ['dracula', 'nord'],
 };
 
 export default themeConfig;

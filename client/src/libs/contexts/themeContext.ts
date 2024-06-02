@@ -1,5 +1,5 @@
-import themeConfig from "@src/config/theme";
-import { createContext } from "react";
+import themeConfig from '@src/config/theme';
+import { createContext } from 'react';
 
 export interface iThemeContext {
   theme: string;
