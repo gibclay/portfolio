@@ -68,7 +68,7 @@ export const Projects = () => {
             development and User Experience.
           </p>
           <Link
-            to={'https://bitesapp.org/'}
+            to={'https://github.com/gibclay/buildmaster'}
             className="btn centered btn-secondary btn-wide my-8 col-span-2"
           >
             Visit BuildMaster
