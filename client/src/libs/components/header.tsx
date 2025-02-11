@@ -18,9 +18,9 @@ const Header = () => {
 
         <div className="navbar-center">
           <ul className="menu menu-horizontal text-neutral-content space-x-8">
-            <Dropdown hover vertical="bottom">
+            <Dropdown hover>
               <div
-                onClick={() => navigate('')}
+                onClick={() => navigate('/#')}
                 tabIndex={0}
                 role="button"
                 className="btn-nav"
@@ -29,10 +29,13 @@ const Header = () => {
               </div>
               <ul className="dropdown-content menu rounded-box bg-base-200 text-base-content">
                 <Dropdown.Item>
-                  <div onClick={() => navigate('')}>Education</div>
+                  <div onClick={() => navigate('/#education')}>Education</div>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <div onClick={() => navigate('')}>Projects</div>
+                  <div onClick={() => navigate('/#experience')}>Experience</div>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <div onClick={() => navigate('/#projects')}>Projects</div>
                 </Dropdown.Item>
               </ul>
             </Dropdown>

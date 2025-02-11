@@ -1,9 +1,13 @@
 import { Hero } from 'react-daisyui';
 
-export const Education = () => {
+export interface iEducationProps {}
+
+export const Education = (props: iEducationProps) => {
   return (
     <>
-      <h1 className="h1">Education</h1>
+      <h1 className="h1" id="education">
+        Education
+      </h1>
       <Hero
         style={{
           backgroundImage:

@@ -12,9 +12,26 @@ export const Projects = () => {
     autoplay: true,
   };
 
+  let projectList = [
+    {
+      name: 'Brock Interactive Software Engineering System (BITES)',
+      desc: 'BITES is a webapp created by myself and 7 other students meant to provide a platform to host supplementary information helpful to aspiring Software Engineers.',
+      link: 'https://bitesapp.org/',
+      is_githublink: false,
+    },
+    {
+      name: 'BuildMaster',
+      desc: 'BuildMaster is a frontend demo for a Do It Yourself PC Builder application. It is made to showcase principles of frontend development and User Experience.',
+      link: 'https://github.com/gibclay/buildmaster',
+      is_githublink: true,
+    },
+  ];
+
   return (
     <>
-      <h1 className="h1">Projects</h1>
+      <h1 className="h1" id="projects">
+        Projects
+      </h1>
       <div className="grid grid-cols-2 w-full">
         {/* BITES */}
 
@@ -28,7 +45,7 @@ export const Projects = () => {
             aspiring Software Engineers.
           </p>
           <Link
-            to="https://bitesapp.org/"
+            to={'https://bitesapp.org/'}
             className="btn centered btn-secondary btn-wide my-8 col-span-2"
           >
             Visit BITES
@@ -50,9 +67,12 @@ export const Projects = () => {
             application. It is made to showcase principles of frontend
             development and User Experience.
           </p>
-          <p className="btn btn-secondary btn-wide text-center mx-auto btn-md my-8 col-span-2">
+          <Link
+            to={'https://bitesapp.org/'}
+            className="btn centered btn-secondary btn-wide my-8 col-span-2"
+          >
             Visit BuildMaster
-          </p>
+          </Link>
         </div>
       </div>
     </>
@@ -88,35 +108,37 @@ const BitesCarousel = (props: CarouselProps) => {
 
 const BuildmasterCarousel = (props: CarouselProps) => {
   return (
-    <Slider {...props.args}>
-      <div>
-        <img
-          className="rounded-box"
-          src="src/assets/buildmaster/buildmaster-front.png"
-          alt="Bites logo"
-        />
-      </div>
-      <div>
-        <img
-          className="rounded-box"
-          src="src/assets/buildmaster/buildmaster-build.png"
-          alt="Bites Modules"
-        />
-      </div>
-      <div>
-        <img
-          className="rounded-box"
-          src="src/assets/buildmaster/buildmaster-details.png"
-          alt="Bites Modules"
-        />
-      </div>
-      <div>
-        <img
-          className="rounded-box"
-          src="src/assets/buildmaster/buildmaster-service.png"
-          alt="Bites Modules"
-        />
-      </div>
-    </Slider>
+    <Link to="https://github.com/gibclay/buildmaster/">
+      <Slider {...props.args}>
+        <div>
+          <img
+            className="rounded-box"
+            src="src/assets/buildmaster/buildmaster-front.png"
+            alt="Bites logo"
+          />
+        </div>
+        <div>
+          <img
+            className="rounded-box"
+            src="src/assets/buildmaster/buildmaster-build.png"
+            alt="Bites Modules"
+          />
+        </div>
+        <div>
+          <img
+            className="rounded-box"
+            src="src/assets/buildmaster/buildmaster-details.png"
+            alt="Bites Modules"
+          />
+        </div>
+        <div>
+          <img
+            className="rounded-box"
+            src="src/assets/buildmaster/buildmaster-service.png"
+            alt="Bites Modules"
+          />
+        </div>
+      </Slider>
+    </Link>
   );
 };
